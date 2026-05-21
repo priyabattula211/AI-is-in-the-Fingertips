@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A modern, minimalistic landing page showcasing refined design philosophy and quiet software solutions.">
+    <title>Aesthete — The Art of Essential Design</title>
+    <!-- Google Fonts: Open Sans & Roboto Condensed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Subtle navigation header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo" id="logo-link">Aesthete</a>
+            <nav class="nav-links">
+                <a href="#philosophy" class="nav-link" id="nav-philosophy">Philosophy</a>
+                <a href="#journal" class="nav-link" id="nav-journal">Journal</a>
+            </nav>
+            <a href="#start" class="header-cta" id="header-cta-btn">Begin</a>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <main class="hero-section">
+        <div class="hero-container">
+            <!-- 1. Small label/tagline -->
+            <div class="hero-tagline animate-reveal" id="hero-tagline-text">
+                Introducing the Quiet Workspace
+            </div>
+            
+            <!-- 2. Large heading -->
+            <h1 class="hero-title animate-reveal" id="hero-title-text">
+                Simplicity is the ultimate premium.
+            </h1>
+            
+            <!-- 3. Short subheading paragraph -->
+            <p class="hero-subtitle animate-reveal" id="hero-subtitle-text">
+                A minimalist digital workspace curated for focus, clarity, and high-performance teams. Crafted for those who appreciate refined aesthetics and quiet efficiency.
+            </p>
+            
+            <!-- 4. Two rounded CTA buttons -->
+            <div class="hero-ctas animate-reveal" id="hero-ctas-container">
+                <a href="#get-started" class="btn btn-primary" id="cta-primary">
+                    <span>Get Started</span>
+                </a>
+                <a href="#learn-more" class="btn btn-secondary" id="cta-secondary">
+                    <span>Learn More</span>
+                </a>
+            </div>
+            
+            <!-- 5. Center image beneath content -->
+            <div class="hero-image-wrapper animate-reveal" id="hero-image-container">
+                <div class="hero-image-glare"></div>
+                <img src="assets/hero-lifestyle.png" alt="Minimalistic workspace with wood desk, laptop, ceramic vase, and natural sunlight" class="hero-image" id="hero-image-img" loading="eager">
+            </div>
+        </div>
+    </main>
+
+    <!-- Features Section -->
+    <section class="features-section" id="philosophy">
+        <div class="features-container">
+            <div class="features-header">
+                <div class="features-tagline animate-reveal" id="features-tagline-text">Core Capabilities</div>
+                <h2 class="features-title animate-reveal" id="features-title-text">Crafted for intentional focus.</h2>
+            </div>
+            
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card animate-reveal" id="feature-1">
+                    <span class="feature-number">01</span>
+                    <h3 class="feature-card-title">Distraction-Free</h3>
+                    <p class="feature-card-desc">An interface designed to disappear. We eliminate visual noise so you can direct your energy solely towards your craft.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card animate-reveal" id="feature-2">
+                    <span class="feature-number">02</span>
+                    <h3 class="feature-card-title">Tactile Feedback</h3>
+                    <p class="feature-card-desc">Every element feels physical. Subtle micro-interactions react to your touch, bringing software back into the real world.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card animate-reveal" id="feature-3">
+                    <span class="feature-number">03</span>
+                    <h3 class="feature-card-title">Refined Speeds</h3>
+                    <p class="feature-card-desc">Engineered for responsiveness. Actions execute instantly under a lightweight frame built to scale with your workspace.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup Section -->
+    <section class="newsletter-section" id="journal">
+        <div class="newsletter-container">
+            <div class="newsletter-content">
+                <span class="newsletter-tagline animate-reveal" id="newsletter-tagline-text">Subscribe</span>
+                <h2 class="newsletter-title animate-reveal" id="newsletter-title-text">Stay in the loop.</h2>
+                <p class="newsletter-subtitle animate-reveal" id="newsletter-subtitle-text">
+                    Receive occasional, curated updates on design, software architecture, and productivity. No noise, just essentials.
+                </p>
+                
+                <form class="newsletter-form animate-reveal" id="signup-form">
+                    <div class="input-wrapper">
+                        <input type="email" placeholder="Your email address" class="newsletter-input" id="email-input" required aria-label="Email Address">
+                        <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+                            <span>Subscribe</span>
+                        </button>
+                    </div>
+                    <div class="form-feedback" id="form-message"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer for complete layout feel -->
+    <footer class="footer">
+        <p>&copy; 2026 Aesthete. All rights reserved.</p>
+    </footer>
+
+    <!-- Vanilla Javascript -->
+    <script src="main.js"></script>
+</body>
+</html>
